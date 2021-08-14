@@ -1,0 +1,101 @@
+@media (max-width: 1100px){
+
+/* --- RESET ---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif, Arial, Helvetica;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+.menu {
+    display: none;
+}
+
+/* --- MENU RETRATIL --- */
+.logodog{
+    background-color: #000;
+    height: 65px;
+}
+.logodog img {
+    width: 60px;
+    margin-left: 85%;
+}
+
+#check {
+    display: none;
+}
+#icone img {
+    margin-left: 238px;
+}
+#icone {
+    transition: all .2s linear;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    background-color: #000;
+    left:-240px;
+    width: 300px;
+
+}
+
+.barra {
+    background-color: #333;
+    height: 88%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+}
+
+.link {
+    background-color: #000;
+    padding: 15px;
+    font-size: 20px;
+    transition: all .2s linear;
+    color: #f4f4f9;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    text-align: center;
+    
+}
+
+.link:hover {
+    background-color: #a55825;
+}
+
+#check:checked ~ .barra nav a .link {
+    transform: translateX(300px);
+}
+
+#check:checked ~ .barra nav a .link {
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .3s;
+}
+
+#check:checked ~ #icone {
+    transform: translateX(240px);
+    transition: all .2s linear;
+    transition-delay: .3s;
+    border-bottom: 2px solid #222;
+}
+#check:checked ~ #icone img {
+        margin-left: 120px;
+       
+    }
+}
+ 
