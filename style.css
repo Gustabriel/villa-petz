@@ -64,6 +64,8 @@ li {
 
 .menu li:hover {
     background-color: #a55825;
+    border-radius: 5px;
+    transition-duration: 2s;
 }
 
 .menu #logo {
